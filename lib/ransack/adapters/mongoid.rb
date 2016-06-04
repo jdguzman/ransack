@@ -1,6 +1,7 @@
 require 'ransack/adapters/mongoid/base'
 ::Mongoid::Document.send :include, Ransack::Adapters::Mongoid::Base
 
+require 'ransack/adapters/mongoid/ransack/nodes/bindable'
 require 'ransack/adapters/mongoid/attributes/attribute'
 require 'ransack/adapters/mongoid/table'
 require 'ransack/adapters/mongoid/inquiry_hash'
